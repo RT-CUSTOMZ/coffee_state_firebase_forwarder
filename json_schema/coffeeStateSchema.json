@@ -1,0 +1,24 @@
+{
+    "title": "Coffee state Mqtt topic",
+    "type": "object",
+    "properties": {
+        "timestamp": {
+            "desciption": "",
+            "type": "string",
+            "format": "date-time"
+        },
+        "state": {
+            "type": "string",
+            "enum": [
+                "InitState",
+                "WorkingState",
+                "ReadyState"
+            ]
+        }
+    },
+    "additionalProperties": true,
+    "required": [
+        "timestamp",
+        "state"
+    ]
+}
